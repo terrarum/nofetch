@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "Google Nofetch",
+    "description": "Puts 'google_nofetch' on the URL.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "NoFetch"
+    },
+    "background": {
+        "scripts": ["nofetch.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ]
+}
